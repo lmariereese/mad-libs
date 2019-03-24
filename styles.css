@@ -1,0 +1,198 @@
+* {
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Roboto', sans-serif;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+h1 {
+  font-family: 'Montserrat', sans-serif;
+
+}
+
+h2 {
+  font-weight: lighter;
+  color: #A09E9E;
+  margin-bottom: 12px;
+}
+
+/* flexboys */
+
+.main-header {
+  display: flex;
+  flex-grow: 1;
+  justify-content: center;
+  padding-bottom: 10px;
+}
+
+.site-title {
+  margin: 0 auto;
+  padding-top: 0.8em;
+
+}
+
+.title {
+  text-align: center;
+}
+
+.main-content {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  width: 75%;
+  margin: 20px auto;
+  padding-bottom: 25px;
+}
+
+.item {
+  flex: 1;
+  width: 50%;
+  align-self: center;
+}
+
+
+.madlib-form {
+  display: flex;
+  flex-direction: column;
+  padding: 0 25px;
+  margin: 20px auto;
+}
+
+.form-item {
+  display: flex;
+  flex-direction: column;
+  flex-grow: 1;
+  margin: 10px 10px;
+}
+
+.form-item.button {
+  width: 25%;
+}
+
+label {
+  margin-top: 10px;
+  padding-bottom: 5px;
+}
+
+input {
+  cursor: pointer;
+}
+
+input[type=text] {
+  border: 1px solid lightgrey;
+  border-radius: 4px;
+  padding: 5px 3px;
+}
+
+.btn-submit {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: lightgrey;
+  margin-top: 10px;
+  padding-top: 7px;
+  padding-bottom: 5px;
+  outline: none;
+  cursor: pointer;
+}
+
+.play-again {
+  display: flex;
+  justify-content: center;
+  padding-top: 25px;
+}
+
+.play-again-btn {
+  border: 1px solid black;
+  border-radius: 4px;
+  background-color: lightgrey;
+  outline: none;
+  cursor: pointer;
+  /* width: 30%; */
+  align-self: center;
+  padding: 10px 20px;
+}
+
+/* Flexboys for right-hand side of page! */
+/*
+.display {
+  display: flex;
+  flex-direction: column;
+  flex-wrap: wrap;
+} */
+
+.tweets {
+  flex: 1;
+  align-self: center;
+  width: 500px;
+}
+
+.results-tweet-div {
+  max-width: 520px;
+  margin-top: 10px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+}
+
+.results-tweet-header {
+  display: flex;
+
+}
+
+.avatar {
+  height: 36px;
+  border-radius: 50%;
+  margin-right: 9px;
+}
+
+.author {
+  display: flex;
+  flex-direction: column;
+}
+
+.author-items {
+  flex: 1;
+}
+
+.results-name {
+  margin: 0;
+  font-size: 16px;
+  font-weight: bold;
+  line-height: 1.4;
+  text-align: left;
+}
+
+.display-username {
+  color: rgb(105, 120, 130);
+  font-size: 14px;
+}
+
+.twitter-icon {
+  width: 1.25em;
+  background-image: url('twitter-icon.png');
+  background-size: contain;
+  background-repeat: no-repeat;
+  margin-left: auto;
+}
+
+
+
+.madlib-tweet {
+  font-size: 16px;
+  line-height: 1.4;
+  text-align: left;
+}
+
+/* .display p {
+  max-width: 520px;
+  margin-top: 25px;
+  margin-bottom: 20px;
+  padding: 15px 20px;
+  border: 1px solid #e1e8ed;
+  border-radius: 5px;
+} */

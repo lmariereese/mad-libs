@@ -1,0 +1,40 @@
+Ok, so stuff I'm learning in this madlibs project.
+
+Returns a single element:
+  - document.getElementById('idname');
+  - document.querySelector('name');
+    - ID: document.querySelector(‘#myHeading’);
+    - CLASS: document.querySelector(‘.error-not-purple’);
+    - ATTRIBUTE: document.querySelector(‘[title=label]’);
+
+Returns an HTML COLLECTION of elements, like array, must use [0] after () if only one:
+  - document.getElementsByTagName('tagname');
+  - document.getElementsByClassName('classname');
+
+Returns a NodeList, like array:
+  - document.querySelectorAll('tagname');
+
+  "First I will explain the difference between NodeList and HTMLCollection. Both interfaces are collections of DOM nodes. They differ in the methods they provide and in the type of nodes they can contain. While a NodeList can contain any node type, an HTMLCollection is supposed to only contain Element nodes. An HTMLCollection provides the same methods as a NodeList and additionally a method called namedItem."
+
+Ways to create objects:
+1. Literal notation:
+    var hotel = {
+      name: 'The Standard',
+      rooms: 40,
+      booked: 25,
+      checkAvailability: function() {
+        return this.rooms - this.booked;
+      }
+    };
+2. Constructor notation:
+    var hotel = new Object();
+    hotel.name = "Soho Grand";
+    hotel.rooms = 100;
+    hotel.booked = 77;
+    hotel.checkAvailability = function() {
+      return this.rooms - this.booked;
+    };
+
+Gotta use `` for multi-line strings.
+
+https://stackoverflow.com/questions/28550328/referenceerror-twttr-is-not-defined-even-while-using-twttr-ready
